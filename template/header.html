@@ -1,3 +1,70 @@
-<div class="header__inner">
-    <h2>Header content</h2>
+<div class="container">
+    <div class="top-bar">
+        <div class="logo-toggle-wrap">
+            <!-- Logo -->
+            <h1 class="logo logo__text">Togi</h1>
+
+            <!-- Toggle button (more) -->
+            <button class="top-bar__more d-none d-lg-block js-toggle" toggle-target="#navbar">
+                <img
+                    src="./assets/icons/more.svg"
+                    alt="image alt"
+                    class="icon top-bar__more-icon"
+                />
+            </button>
+        </div>
+
+        <!-- Navbar -->
+        <nav id="navbar" class="navbar hide">
+            <ul class="navbar__list">
+                <li class="navbar__item">
+                    <a href="./" class="navbar__link">
+                        Products
+                        <img
+                            src="./assets/icons/arrow-down.svg"
+                            alt="image alt"
+                            class="icon arrow-down"
+                        />
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#service" class="navbar__link">
+                        Pricing
+                        <img
+                            src="./assets/icons/arrow-down.svg"
+                            alt="image alt"
+                            class="icon arrow-down"
+                        />
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#feature" class="navbar__link">
+                        Company
+                        <img
+                            src="./assets/icons/arrow-down.svg"
+                            alt="image alt"
+                            class="icon arrow-down"
+                        />
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#testimonial" class="navbar__link">
+                        Blog
+                        <img
+                            src="./assets/icons/arrow-down.svg"
+                            alt="image alt"
+                            class="icon arrow-down"
+                        />
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="navbar__overlay js-toggle" toggle-target="#navbar"></div>
+
+        <!-- Actions -->
+        <div class="top-act">
+            <a href="#!" class="btn btn--text top-act__btn d-md-none">Log In</a>
+            <a href="#!" class="btn btn--primary top-act__btn top-act__sign-up">Get Started</a>
+        </div>
+    </div>
 </div>

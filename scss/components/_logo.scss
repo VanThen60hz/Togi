@@ -1,0 +1,18 @@
+@use "../abstracts";
+
+.logo {
+    &__text {
+        font-size: 2.8rem;
+        font-weight: 500;
+
+        @include abstracts.screen(lg) {
+            font-size: 1.7rem;
+        }
+    }
+}
+
+.logo-toggle-wrap {
+    display: flex;
+    align-content: center;
+    gap: 15px;
+}
