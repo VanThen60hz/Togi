@@ -1,0 +1,133 @@
+.hero {
+    margin-top: 70px;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+    }
+
+    &-social {
+        &__list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        &__link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            height: 34px;
+            width: 34px;
+
+            border-radius: 34px;
+            border: 1px solid #ff974a;
+            transition-property: background-color, filter;
+            transition-duration: 0.9s;
+
+            &:hover {
+                background: #ff974a;
+            }
+        }
+
+        &__link:hover &__icon {
+            filter: brightness(0) saturate(100%) invert(9%) sepia(2%) saturate(11%) hue-rotate(6deg)
+                brightness(98%) contrast(89%);
+        }
+    }
+
+    &__content {
+        margin-left: 96px;
+        width: 552px;
+    }
+
+    &__heading {
+        font-size: 6.4rem;
+        font-weight: 700;
+        line-height: 1.16;
+    }
+
+    &__desc {
+        margin-top: 12px;
+        width: 368px;
+        font-size: 1.6rem;
+        line-height: 1.5;
+    }
+
+    &__btn {
+        margin-top: 40px;
+    }
+
+    &__media {
+        position: relative;
+        z-index: 1;
+    }
+
+    &__images {
+        position: relative;
+        width: 422px;
+        height: 336px;
+    }
+
+    &__image {
+        position: absolute;
+        top: 82px;
+
+        width: 252px;
+        height: 258px;
+        object-fit: contain;
+    }
+
+    &__peoples {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 250px;
+        padding: 0 20px 20px;
+
+        border-radius: 8px;
+        background: #1e75ff;
+    }
+
+    &-search-input {
+        padding: 20px 0 14px;
+        width: 100%;
+        border-bottom: 1px solid rgba($color: #fff, $alpha: 0.1);
+        color: #fff;
+
+        &::placeholder {
+            color: inherit;
+            font-family: Inter;
+            font-size: 1.2rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        &::-webkit-search-cancel-button {
+            filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7428%)
+                hue-rotate(69deg) brightness(115%) contrast(105%);
+            cursor: pointer;
+        }
+    }
+
+    &-arrow-down {
+        position: absolute;
+        top: 31px;
+        left: 104px;
+    }
+
+    &-arrow-up {
+        position: absolute;
+        right: 101px;
+        bottom: 37.5px;
+    }
+
+    &-decor {
+        position: absolute;
+        z-index: -1;
+        right: -32px;
+        bottom: 39px;
+    }
+}

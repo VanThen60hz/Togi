@@ -32,9 +32,139 @@
         <script>
             load("#header", "./template/header.html");
         </script>
+
+        <section id="hero" class="hero">
+            <div class="container">
+                <div class="hero__inner">
+                    <div class="hero-menu d-lg-none">
+                        <div class="hero-social__list">
+                            <a href="#!" class="hero-social__link">
+                                <img
+                                    src="./assets/icons/instagram.svg"
+                                    alt="image alt"
+                                    class="icon hero-social__icon"
+                                />
+                            </a>
+                            <a href="#!" class="hero-social__link">
+                                <img
+                                    src="./assets/icons/facebook.svg"
+                                    alt="image alt"
+                                    class="icon hero-social__icon"
+                                />
+                            </a>
+                            <a href="#!" class="hero-social__link">
+                                <img
+                                    src="./assets/icons/twitter.svg"
+                                    alt="image alt"
+                                    class="icon hero-social__icon"
+                                />
+                            </a>
+                        </div>
+
+                        <p class="hero-menu__text">SCROLL DOWN</p>
+
+                        <img class="hero-menu__icon" src="./assets/icons/menu-arrow.svg" alt="" />
+                    </div>
+
+                    <div class="hero__content">
+                        <h1 class="hero__heading">More than your average popup builder</h1>
+                        <p class="hero__desc">
+                            Everything you need—forms, sidebars, slide-ins, gamification—to turn
+                            your traffic into revenue.
+                        </p>
+
+                        <a href="#!" class="btn btn--primary hero__btn">Start your free trial</a>
+                    </div>
+
+                    <div class="hero__media">
+                        <div class="hero__images">
+                            <img src="./assets/img/hero/item-01.png" alt="" class="hero__image" />
+                            <div class="hero__peoples">
+                                <input
+                                    type="search"
+                                    placeholder="Search people"
+                                    name="search"
+                                    id="search-input"
+                                    class="hero-search-input"
+                                />
+
+                                <div class="hero-people__list">
+                                    <article class="hero-people-item">
+                                        <img
+                                            src="./assets/img/hero/avatar-01.jpg"
+                                            alt="image alt"
+                                            class="hero-people-item__avatar"
+                                        />
+                                        <div class="hero-people-item__info">
+                                            <h3 class="hero-people-item__name">Ever Obi</h3>
+                                            <p class="hero-people-item__position">UI/UX Designer</p>
+                                        </div>
+                                        <a href="#!" class="btn btn--text hero-people-item__cta">
+                                            Invite
+                                        </a>
+                                    </article>
+                                    <article class="hero-people-item">
+                                        <img
+                                            src="./assets/img/hero/avatar-02.jpg"
+                                            alt="image alt"
+                                            class="hero-people-item__avatar"
+                                        />
+                                        <div class="hero-people-item__info">
+                                            <h3 class="hero-people-item__name">Ever Obi</h3>
+                                            <p class="hero-people-item__position">UI/UX Designer</p>
+                                        </div>
+                                        <a href="#!" class="btn btn--text hero-people-item__cta">
+                                            Invite
+                                        </a>
+                                    </article>
+                                    <article class="hero-people-item">
+                                        <img
+                                            src="./assets/img/hero/avatar-03.jpg"
+                                            alt="image alt"
+                                            class="hero-people-item__avatar"
+                                        />
+                                        <div class="hero-people-item__info">
+                                            <h3 class="hero-people-item__name">Ever Obi</h3>
+                                            <p class="hero-people-item__position">UI/UX Designer</p>
+                                        </div>
+                                        <a href="#!" class="btn btn--text hero-people-item__cta">
+                                            Invite
+                                        </a>
+                                    </article>
+                                </div>
+                            </div>
+                            <img
+                                class="hero-arrow-down"
+                                src="./assets/icons/hero-arrow-down.svg"
+                                alt=""
+                            />
+                            <img
+                                class="hero-arrow-up"
+                                src="./assets/icons/hero-arrow-up.svg"
+                                alt=""
+                            />
+                            <img class="hero-decor" src="./assets/icons/hero-decor.svg" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <footer id="footer" class="footer"></footer>
         <script>
             load("#footer", "./template/footer.html");
+        </script>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const textElement = document.querySelector(".hero-menu__text");
+
+                if (textElement) {
+                    const textWidth = textElement.offsetWidth + 32;
+
+                    textElement.style.marginTop = `${textWidth}px`;
+                }
+            });
         </script>
     </body>
 </html>

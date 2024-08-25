@@ -1,0 +1,48 @@
+.hero-people {
+    &__list {
+        margin-top: 16px;
+    }
+
+    &-item + &-item {
+        margin-top: 14px;
+    }
+}
+
+.hero-people-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px 8px 10px;
+    border-radius: 5px;
+    border: 1px solid rgba($color: #fff, $alpha: 0.1);
+
+    &__avatar {
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    &__info {
+        margin-left: 8px;
+    }
+
+    &__name {
+        font-family: Inter;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    &__position {
+        color: #fff;
+        margin-top: 5px;
+        font-family: Inter;
+        font-size: 1rem;
+    }
+
+    &__cta {
+        --height: auto;
+        margin-left: auto;
+        padding: initial;
+        border: none;
+    }
+}
