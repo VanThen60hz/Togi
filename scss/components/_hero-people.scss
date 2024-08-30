@@ -1,10 +1,20 @@
+@use "../abstracts";
+
 .hero-people {
     &__list {
         margin-top: 16px;
+
+        @include abstracts.screen(lg) {
+            margin-top: 9px;
+        }
     }
 
     &-item + &-item {
         margin-top: 14px;
+
+        @include abstracts.screen(lg) {
+            margin-top: 10px;
+        }
     }
 }
 
@@ -15,21 +25,38 @@
     border-radius: 5px;
     border: 1px solid rgba($color: #fff, $alpha: 0.1);
 
+    @include abstracts.screen(lg) {
+        padding: 6px 12px 6px 8px;
+    }
+
     &__avatar {
         width: 28px;
         height: 28px;
         border-radius: 50%;
         object-fit: cover;
+
+        @include abstracts.screen(lg) {
+            width: 20px;
+            height: 20px;
+        }
     }
 
     &__info {
         margin-left: 8px;
+
+        @include abstracts.screen(lg) {
+            margin-left: 6px;
+        }
     }
 
     &__name {
         font-family: Inter;
         font-size: 1.2rem;
         font-weight: 600;
+
+        @include abstracts.screen(lg) {
+            font-size: 0.8855rem;
+        }
     }
 
     &__position {
@@ -37,6 +64,10 @@
         margin-top: 5px;
         font-family: Inter;
         font-size: 1rem;
+
+        @include abstracts.screen(lg) {
+            font-size: 0.7379rem;
+        }
     }
 
     &__cta {
@@ -44,5 +75,9 @@
         margin-left: auto;
         padding: initial;
         border: none;
+
+        @include abstracts.screen(lg) {
+            font-size: 0.8855rem;
+        }
     }
 }

@@ -1,0 +1,88 @@
+@use "../abstracts";
+
+.hero-process {
+    margin-top: 41px;
+
+    @include abstracts.screen(lg) {
+        margin-top: 30px;
+    }
+
+    &-form {
+        position: relative;
+        width: 416px;
+        height: 66px;
+
+        border-radius: 8px;
+        background: #292932;
+
+        @include abstracts.screen(lg) {
+            width: 306.96px;
+            height: 48.7px;
+        }
+    }
+
+    &__input {
+        width: 100%;
+        padding: 24px;
+        color: #fff;
+
+        @include abstracts.screen(lg) {
+            padding: 16px;
+
+            &::placeholder {
+                font-size: 1.033rem !important;
+            }
+        }
+
+        &::placeholder {
+            color: #b0b0b0;
+            font-family: Inter;
+            font-size: 1.4rem;
+            font-weight: 500;
+        }
+    }
+
+    &__act {
+        position: absolute;
+        right: 16px;
+        top: 50%;
+        translate: 0 -50%;
+
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__btn {
+        padding: initial;
+    }
+
+    &__attach,
+    &__image {
+        width: 11.806px;
+        height: 11.806px;
+    }
+
+    &__send {
+        @include abstracts.screen(lg) {
+            width: 8.855px;
+            height: 8.855px;
+        }
+    }
+
+    &__submit {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 36px;
+        width: 36px;
+        padding: initial;
+        border-radius: 50%;
+        background: #fc5a5a;
+
+        @include abstracts.screen(lg) {
+            height: 26.64px;
+            width: 26.64px;
+        }
+    }
+}

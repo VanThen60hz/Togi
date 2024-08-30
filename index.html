@@ -80,13 +80,20 @@
                         <div class="hero__images">
                             <img src="./assets/img/hero/item-01.png" alt="" class="hero__image" />
                             <div class="hero__peoples">
-                                <input
-                                    type="search"
-                                    placeholder="Search people"
-                                    name="search"
-                                    id="search-input"
-                                    class="hero-search-input"
-                                />
+                                <div class="hero-search-wrap">
+                                    <input
+                                        type="search"
+                                        placeholder="Search people"
+                                        name="search"
+                                        id="search-input"
+                                        class="hero-search-input"
+                                    />
+                                    <img
+                                        src="./assets/icons/search.svg"
+                                        alt=""
+                                        class="hero-search-icon"
+                                    />
+                                </div>
 
                                 <div class="hero-people__list">
                                     <article class="hero-people-item">
@@ -145,6 +152,43 @@
                             />
                             <img class="hero-decor" src="./assets/icons/hero-decor.svg" alt="" />
                         </div>
+
+                        <form class="hero-process-form hero-process">
+                            <input
+                                type="text"
+                                name="process"
+                                id="hero-process"
+                                class="hero-process__input"
+                                placeholder="Hi, what the process?"
+                            />
+
+                            <div class="hero-process__act">
+                                <button class="btn btn--no-margin hero-process__btn">
+                                    <img
+                                        src="./assets/icons/attach.svg"
+                                        alt=""
+                                        class="hero-process__attach"
+                                    />
+                                </button>
+                                <button class="btn btn--no-margin hero-process__btn">
+                                    <img
+                                        src="./assets/icons/image.svg"
+                                        alt=""
+                                        class="hero-process__image"
+                                    />
+                                </button>
+                                <button
+                                    type="submit"
+                                    class="btn btn--no-margin hero-process__submit"
+                                >
+                                    <img
+                                        src="./assets/icons/send.svg"
+                                        alt=""
+                                        class="hero-process__send"
+                                    />
+                                </button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
