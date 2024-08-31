@@ -1,0 +1,46 @@
+.feature {
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__content {
+        width: 488px;
+    }
+
+    &__media {
+        position: relative;
+    }
+
+    &__image {
+        position: relative;
+        margin-left: 32px;
+        width: 488px;
+        height: 436px;
+    }
+
+    &-media-decor {
+        position: absolute;
+        top: -43px;
+        left: 0;
+        width: 204px;
+        height: 204px;
+        flex-shrink: 0;
+    }
+
+    &__heading {
+        margin-top: 8px;
+        width: 60%;
+    }
+
+    &__desc {
+        &:nth-of-type(1) {
+            color: orange !important;
+        }
+    }
+}
+
+.features {
+    margin-top: 163px;
+}
