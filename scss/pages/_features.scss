@@ -1,16 +1,43 @@
+@use "../abstracts";
+
 .feature {
     &__inner {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        gap: 140px;
+
+        @include abstracts.screen(lg) {
+            flex-direction: column-reverse;
+        }
     }
 
     &__content {
         width: 488px;
+
+        @include abstracts.screen(xl) {
+            width: 50%;
+        }
+
+        @include abstracts.screen(lg) {
+            width: 100%;
+        }
     }
 
     &__media {
         position: relative;
+
+        @include abstracts.screen(xl) {
+            width: 50%;
+        }
+
+        @include abstracts.screen(lg) {
+            width: 65%;
+        }
+
+        @include abstracts.screen(md) {
+            width: 100%;
+        }
     }
 
     &__image {
@@ -18,6 +45,13 @@
         margin-left: 32px;
         width: 488px;
         height: 436px;
+
+        @include abstracts.screen(xl) {
+            margin-left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
     }
 
     &-media-decor {
@@ -27,16 +61,63 @@
         width: 204px;
         height: 204px;
         flex-shrink: 0;
+
+        @include abstracts.screen(xl) {
+            top: -30px;
+            width: 150px;
+            height: 150px;
+        }
     }
 
     &__heading {
         margin-top: 8px;
         width: 60%;
+
+        @include abstracts.screen(xl) {
+            width: 100%;
+            font-size: 3rem;
+        }
     }
 
     &__desc {
+        @include abstracts.screen(md) {
+            font-size: 1.4rem;
+        }
+
         &:nth-of-type(1) {
-            color: orange !important;
+            margin-top: 20px;
+
+            @include abstracts.screen(xl) {
+                margin-top: 10px;
+            }
+
+            @include abstracts.screen(lg) {
+                margin-top: 20px;
+            }
+        }
+    }
+
+    &__desc + &__desc {
+        margin-top: 18px;
+
+        @include abstracts.screen(xl) {
+            margin-top: 10px;
+        }
+
+        @include abstracts.screen(lg) {
+            margin-top: 20px;
+        }
+    }
+
+    &__btn {
+        margin-top: 48px;
+
+        @include abstracts.screen(xl) {
+            margin-top: 32px;
+        }
+
+        @include abstracts.screen(lg) {
+            margin-top: 20px;
         }
     }
 }
