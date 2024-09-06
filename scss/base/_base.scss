@@ -48,6 +48,10 @@ button {
     cursor: pointer;
 }
 
+a {
+    cursor: pointer;
+}
+
 a,
 img,
 button,
@@ -130,9 +134,39 @@ strong {
     font-size: 3.4rem;
     font-weight: 500;
     line-height: 1.3;
+
+    @include abstracts.screen(sm) {
+        font-size: 3rem;
+    }
 }
 
 .section-desc {
     font-size: 1.6rem;
     line-height: 1.5;
+}
+
+.header__container,
+.hero__container,
+.feature__container {
+    width: 1370px !important;
+
+    @include abstracts.screen(xxl) {
+        max-width: 1140px !important;
+    }
+
+    @include abstracts.screen(xl) {
+        max-width: 960px !important;
+    }
+
+    @include abstracts.screen(lg) {
+        max-width: 720px !important;
+    }
+
+    @include abstracts.screen(md) {
+        max-width: 540px !important;
+    }
+
+    @include abstracts.screen(sm) {
+        max-width: 100% !important;
+    }
 }

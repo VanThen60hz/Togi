@@ -13,7 +13,7 @@ $container-max-widths: (
     md: 540px,
     lg: 720px,
     xl: 960px,
-    xxl: 1140px,
+    xxl: 990px,
 );
 
 $grid-columns: 12 !default;
@@ -44,7 +44,7 @@ $gutters: (
 
 .container {
     @extend .container-fluid;
-    width: 1370px;
+    width: 1100px;
 }
 
 .row {
