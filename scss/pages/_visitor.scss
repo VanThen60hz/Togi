@@ -1,0 +1,22 @@
+.visitor {
+    margin-top: 160px;
+    &__label,
+    &__heading {
+        display: block;
+        text-align: center;
+    }
+
+    &__widgets {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        row-gap: 30px;
+    }
+
+    &__widget {
+        width: 44%;
+        padding: 58px 40px 30px;
+        border-radius: 8px;
+        background: #292932;
+    }
+}

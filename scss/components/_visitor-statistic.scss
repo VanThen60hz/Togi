@@ -1,0 +1,78 @@
+.visitor-statistic {
+    position: relative;
+    border-radius: 10px;
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: -0.01rem;
+    line-height: normal;
+
+    &::before {
+        position: absolute;
+        top: -28px;
+        left: 50%;
+        translate: -50%;
+
+        padding: 10px;
+        border-radius: 4px;
+        background: #1c1c24;
+    }
+
+    &-01,
+    &-02 {
+        width: 126px;
+        padding: 22px 21px 11px;
+    }
+
+    &-01 {
+        &::before {
+            content: url("../../assets/icons/visitor/home.svg");
+        }
+        background: #f6ff82;
+    }
+
+    &-02 {
+        &::before {
+            content: url("../../assets/icons/visitor/email-sent.svg");
+        }
+        background: #d2efff;
+    }
+
+    &-03 {
+        &::before {
+            content: url("../../assets/icons/visitor/product-bought.svg");
+            padding: 13px;
+        }
+
+        width: 50%;
+        margin: 41px auto 0;
+        padding: 47px 32px 15px;
+        color: #000;
+        text-align: center;
+        font-size: 1.4rem;
+        background: #dcb0ff;
+    }
+
+    &__number {
+        margin-top: 4px;
+        font-size: 2rem;
+        font-weight: 600;
+        letter-spacing: -0.02rem;
+    }
+
+    &__desc {
+        margin-top: 4px;
+        font-weight: 400;
+    }
+}
+
+.visitor-statistics {
+    margin-top: 83px;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+    }
+}

@@ -1682,6 +1682,12 @@ html {
   border-radius: 8px;
   border: 1px solid #292932;
 }
+@media (max-width: 575.98px) {
+  .service-item {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 .service-item:hover {
   background: #292932;
   transition: background-color 0.9s;
@@ -1729,6 +1735,87 @@ html {
     width: 32.542px;
     height: 32.542px;
   }
+}
+
+.visitor-statistic {
+  position: relative;
+  border-radius: 10px;
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: -0.01rem;
+  line-height: normal;
+}
+.visitor-statistic::before {
+  position: absolute;
+  top: -28px;
+  left: 50%;
+  translate: -50%;
+  padding: 10px;
+  border-radius: 4px;
+  background: #1c1c24;
+}
+.visitor-statistic-01, .visitor-statistic-02 {
+  width: 126px;
+  padding: 22px 21px 11px;
+}
+.visitor-statistic-01 {
+  background: #f6ff82;
+}
+.visitor-statistic-01::before {
+  content: url("../../assets/icons/visitor/home.svg");
+}
+.visitor-statistic-02 {
+  background: #d2efff;
+}
+.visitor-statistic-02::before {
+  content: url("../../assets/icons/visitor/email-sent.svg");
+}
+.visitor-statistic-03 {
+  width: 50%;
+  margin: 41px auto 0;
+  padding: 47px 32px 15px;
+  color: #000;
+  text-align: center;
+  font-size: 1.4rem;
+  background: #dcb0ff;
+}
+.visitor-statistic-03::before {
+  content: url("../../assets/icons/visitor/product-bought.svg");
+  padding: 13px;
+}
+.visitor-statistic__number {
+  margin-top: 4px;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: -0.02rem;
+}
+.visitor-statistic__desc {
+  margin-top: 4px;
+  font-weight: 400;
+}
+
+.visitor-statistics {
+  margin-top: 83px;
+}
+.visitor-statistics__top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.visitor-feature {
+  display: flex;
+  align-items: center;
+}
+.visitor-feature__icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px;
+  border-radius: 50%;
+  background: #fff;
 }
 
 .header {
@@ -2222,6 +2309,26 @@ html {
   .services {
     margin-top: 70px;
   }
+}
+
+.visitor {
+  margin-top: 160px;
+}
+.visitor__label, .visitor__heading {
+  display: block;
+  text-align: center;
+}
+.visitor__widgets {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  row-gap: 30px;
+}
+.visitor__widget {
+  width: 44%;
+  padding: 58px 40px 30px;
+  border-radius: 8px;
+  background: #292932;
 }
 
 /*# sourceMappingURL=main.css.map */

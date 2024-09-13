@@ -1,0 +1,12 @@
+.visitor-feature {
+    display: flex;
+    align-items: center;
+    &__icon-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 11px;
+        border-radius: 50%;
+        background: #fff;
+    }
+}

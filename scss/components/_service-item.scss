@@ -9,6 +9,11 @@
     border-radius: 8px;
     border: 1px solid #292932;
 
+    @include abstracts.screen(sm) {
+        flex-direction: column;
+        text-align: center;
+    }
+
     &:hover {
         background: #292932;
         transition: background-color 0.9s;
