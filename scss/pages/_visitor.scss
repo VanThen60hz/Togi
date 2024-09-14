@@ -1,5 +1,6 @@
 .visitor {
     margin-top: 160px;
+
     &__label,
     &__heading {
         display: block;
@@ -7,6 +8,8 @@
     }
 
     &__widgets {
+        margin-top: 83px;
+
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -15,7 +18,7 @@
 
     &__widget {
         width: 44%;
-        padding: 58px 40px 30px;
+        padding: 58px 25px 30px;
         border-radius: 8px;
         background: #292932;
     }

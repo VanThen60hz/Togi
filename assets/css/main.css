@@ -1786,6 +1786,12 @@ html {
   content: url("../../assets/icons/visitor/product-bought.svg");
   padding: 13px;
 }
+@media (max-width: 991.98px) {
+  .visitor-statistic-03 {
+    width: 67%;
+    padding: 33px 30px 38px;
+  }
+}
 .visitor-statistic__number {
   margin-top: 4px;
   font-size: 2rem;
@@ -1797,17 +1803,43 @@ html {
   font-weight: 400;
 }
 
-.visitor-statistics {
-  margin-top: 83px;
-}
 .visitor-statistics__top {
   display: flex;
   justify-content: space-between;
+  gap: 17px;
 }
 
 .visitor-feature {
+  position: relative;
   display: flex;
   align-items: center;
+  gap: 17px;
+  width: 77%;
+  padding: 20px;
+  border-radius: 6.167px;
+  color: #fff;
+  font-family: Inter;
+}
+.visitor-feature::before {
+  position: absolute;
+  top: 10px;
+  right: 17px;
+  content: "...";
+}
+.visitor-feature + .visitor-feature {
+  margin-top: 20px;
+}
+.visitor-feature-01, .visitor-feature-03 {
+  margin-left: auto;
+}
+.visitor-feature-01 {
+  background: #ff974a;
+}
+.visitor-feature-02 {
+  background: #79d861;
+}
+.visitor-feature-03 {
+  background: #1e75ff;
 }
 .visitor-feature__icon-wrap {
   display: flex;
@@ -1816,6 +1848,15 @@ html {
   padding: 11px;
   border-radius: 50%;
   background: #fff;
+}
+.visitor-feature__title {
+  font-size: 1.3877rem;
+  font-weight: 600;
+}
+.visitor-feature__desc {
+  margin-top: 8px;
+  font-size: 1.1564rem;
+  font-weight: 500;
 }
 
 .header {
@@ -2319,6 +2360,7 @@ html {
   text-align: center;
 }
 .visitor__widgets {
+  margin-top: 83px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -2326,7 +2368,7 @@ html {
 }
 .visitor__widget {
   width: 44%;
-  padding: 58px 40px 30px;
+  padding: 58px 25px 30px;
   border-radius: 8px;
   background: #292932;
 }

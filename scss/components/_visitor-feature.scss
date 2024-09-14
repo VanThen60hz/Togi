@@ -1,6 +1,46 @@
+@use "../abstracts";
+
 .visitor-feature {
+    position: relative;
     display: flex;
     align-items: center;
+    gap: 17px;
+
+    width: 77%;
+    padding: 20px;
+    border-radius: 6.167px;
+    color: #fff;
+    font-family: Inter;
+
+    &::before {
+        position: absolute;
+        top: 10px;
+        right: 17px;
+
+        content: "...";
+    }
+
+    + .visitor-feature {
+        margin-top: 20px;
+    }
+
+    &-01,
+    &-03 {
+        margin-left: auto;
+    }
+
+    &-01 {
+        background: #ff974a;
+    }
+
+    &-02 {
+        background: #79d861;
+    }
+
+    &-03 {
+        background: #1e75ff;
+    }
+
     &__icon-wrap {
         display: flex;
         align-items: center;
@@ -8,5 +48,16 @@
         padding: 11px;
         border-radius: 50%;
         background: #fff;
+    }
+
+    &__title {
+        font-size: 1.3877rem;
+        font-weight: 600;
+    }
+
+    &__desc {
+        margin-top: 8px;
+        font-size: 1.1564rem;
+        font-weight: 500;
     }
 }
