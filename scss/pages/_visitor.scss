@@ -1,3 +1,5 @@
+@use "../abstracts";
+
 .visitor {
     margin-top: 160px;
 
@@ -14,6 +16,10 @@
         align-items: center;
         justify-content: space-between;
         row-gap: 30px;
+
+        @include abstracts.screen(lg) {
+            flex-direction: column;
+        }
     }
 
     &__widget {
@@ -21,5 +27,13 @@
         padding: 58px 25px 30px;
         border-radius: 8px;
         background: #292932;
+
+        @include abstracts.screen(lg) {
+            width: 60%;
+        }
+
+        @include abstracts.screen(md) {
+            width: 100%;
+        }
     }
 }
