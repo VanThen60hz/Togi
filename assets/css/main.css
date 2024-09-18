@@ -1873,6 +1873,24 @@ html {
   }
 }
 
+.popup-item__number {
+  margin-top: 24px;
+  margin-bottom: 8px;
+  color: #fff;
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: normal;
+}
+.popup-item__desc {
+  width: 160px;
+  margin: 0 auto;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
 .header {
   margin-top: 29px;
 }
@@ -2400,6 +2418,39 @@ html {
   .visitor__widget {
     width: 100%;
   }
+}
+
+.popup {
+  margin-top: 160px;
+}
+.popup__heading {
+  margin-top: 8px;
+  width: 409px;
+}
+.popup__inner {
+  position: relative;
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 40px 60px;
+  text-align: center;
+}
+@media (max-width: 991.98px) {
+  .popup__inner {
+    grid-template-columns: repeat(2, auto);
+    gap: 40px;
+  }
+}
+@media (max-width: 767.98px) {
+  .popup__inner {
+    grid-template-columns: auto;
+    gap: 40px;
+  }
+}
+.popup__decor {
+  position: absolute;
+  top: -126px;
+  right: -167px;
 }
 
 /*# sourceMappingURL=main.css.map */

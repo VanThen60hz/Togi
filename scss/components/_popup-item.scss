@@ -1,0 +1,21 @@
+.popup-item {
+    &__number {
+        margin-top: 24px;
+        margin-bottom: 8px;
+
+        color: #fff;
+        font-size: 3.6rem;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    &__desc {
+        width: 160px;
+        margin: 0 auto;
+        font-size: 1.6rem;
+        font-weight: 700;
+        line-height: 1.5;
+        letter-spacing: 0.2rem;
+        text-transform: uppercase;
+    }
+}
