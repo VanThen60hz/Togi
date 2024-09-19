@@ -1,0 +1,22 @@
+.process {
+    margin-top: 136px;
+
+    &__label,
+    &__heading {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__heading {
+        margin-top: 8px;
+        width: 510px;
+    }
+
+    &__inner {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 40px;
+    }
+}
