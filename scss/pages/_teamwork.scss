@@ -1,0 +1,76 @@
+@use "../abstracts";
+
+.teamwork {
+    margin-top: 160px;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 145px;
+
+        @include abstracts.screen(lg) {
+            flex-direction: column-reverse;
+            gap: 80px;
+        }
+    }
+
+    &__media {
+        position: relative;
+        height: 385px;
+        width: 43%;
+        flex-shrink: 0;
+
+        @include abstracts.screen(xl) {
+            height: 330px;
+        }
+
+        @include abstracts.screen(lg) {
+            width: 100%;
+            height: 570px;
+        }
+
+        @include abstracts.screen(md) {
+            height: 350px;
+        }
+    }
+
+    &__image {
+        position: absolute;
+        object-fit: cover;
+
+        @include abstracts.screen(sm) {
+            &-01 {
+                width: 268.29px;
+            }
+
+            &-02 {
+                width: 158.074px;
+            }
+        }
+
+        &-01 {
+            top: 0;
+            right: 0;
+            width: 76%;
+        }
+
+        &-02 {
+            left: 0;
+            bottom: 0;
+            width: 50%;
+        }
+    }
+
+    &__content {
+        width: auto;
+    }
+
+    &__heading {
+        margin-top: 8px;
+    }
+
+    &__desc {
+        margin-top: 28px;
+    }
+}
