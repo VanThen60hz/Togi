@@ -1,0 +1,61 @@
+@use "../abstracts";
+
+.question {
+    margin-top: 107px;
+
+    &__inner {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 102px;
+
+        padding: 59px 93px 54px 60px;
+        border-radius: 12px;
+        background: #292932;
+
+        @include abstracts.screen(lg) {
+            flex-direction: column;
+            gap: 40px;
+            padding: 0;
+
+            background: none;
+        }
+    }
+
+    &__content {
+        width: 44%;
+        flex-shrink: 0;
+
+        @include abstracts.screen(lg) {
+            width: 100%;
+        }
+    }
+
+    &__desc {
+        margin-top: 16px;
+    }
+
+    &__btn {
+        margin-top: 40px;
+    }
+
+    &__image {
+        width: 100%;
+        object-fit: cover;
+
+        @include abstracts.screen(lg) {
+            width: 70%;
+        }
+
+        @include abstracts.screen(md) {
+            width: 100%;
+        }
+    }
+
+    &__decor {
+        position: absolute;
+        right: -53px;
+        bottom: -49px;
+        z-index: -1;
+    }
+}

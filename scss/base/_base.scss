@@ -147,7 +147,8 @@ strong {
 
 .header__container,
 .hero__container,
-.feature__container {
+.feature__container,
+.footer__container {
     width: 1370px !important;
 
     @include abstracts.screen(xxl) {
