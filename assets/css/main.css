@@ -2766,4 +2766,11 @@ html {
   z-index: -1;
 }
 
+.product-popup-hero {
+  text-align: center;
+}
+.product-popup-hero__desc {
+  width: auto;
+}
+
 /*# sourceMappingURL=main.css.map */
